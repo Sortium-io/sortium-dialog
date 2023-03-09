@@ -1,3 +1,25 @@
 # Minimal example of game dialog system powered by LLM
 
 Player is kept in dialog rails, AI stays in character and chaos is averted.
+
+Example run:
+```
+Sortium: Welcome to the Jungle Adventure! You find yourself lost in the middle of the jungle. What do you do?
+- Look for shelter.
+- Search for civilization.
+look for home
+Sortium: You find an abandoned cave. Do you want to explore it?
+- Yes.
+- No, look for something else.
+yup
+Sortium: You discover a hidden treasure! But the cave is cursed. What do you do?
+- Take the treasure.
+- Leave the treasure.
+take
+Sortium: You take the treasure but a curse falls upon you. You become a statue forever. Game Over!
+- Play again.
+again
+Sortium: Welcome to the Jungle Adventure! You find yourself lost in the middle of the jungle. What do you do?
+- Look for shelter.
+- Search for civilization.
+``` 
