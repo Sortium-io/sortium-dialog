@@ -1,0 +1,133 @@
+- id: start
+  text: "Welcome to the Jungle Adventure! You find yourself lost in the middle of the jungle. What do you do?"
+  options:
+    - option: "Look for shelter."
+      next_id: "shelter"
+    - option: "Search for civilization."
+      next_id: "civilization"
+
+- id: shelter
+  text: "You find an abandoned cave. Do you want to explore it?"
+  options:
+    - option: "Yes."
+      next_id: "explore_cave"
+    - option: "No, look for something else."
+      next_id: "look_for_shelter"
+
+- id: explore_cave
+  text: "You discover a hidden treasure! But the cave is cursed. What do you do?"
+  options:
+    - option: "Take the treasure."
+      next_id: "take_treasure"
+    - option: "Leave the treasure."
+      next_id: "leave_treasure"
+
+- id: take_treasure
+  text: "You take the treasure but a curse falls upon you. You become a statue forever. Game Over!"
+  options:
+    - option: "Play again."
+      next_id: "start"
+
+- id: leave_treasure
+  text: "You leave the treasure and find your way out of the cave. What do you do next?"
+  options:
+    - option: "Continue searching for shelter."
+      next_id: "look_for_shelter"
+    - option: "Search for civilization."
+      next_id: "civilization"
+
+- id: look_for_shelter
+  text: "You come across a river with a boat. Do you want to cross the river?"
+  options:
+    - option: "Yes."
+      next_id: "cross_river"
+    - option: "No, keep searching."
+      next_id: "look_for_shelter"
+
+- id: cross_river
+  text: "As you cross the river, you hear a loud roar. What do you do?"
+  options:
+    - option: "Investigate the sound."
+      next_id: "investigate_sound"
+    - option: "Ignore it and continue."
+      next_id: "continue_crossing"
+
+- id: investigate_sound
+  text: "You come across a tiger. What do you do?"
+  options:
+    - option: "Run for your life!"
+      next_id: "run_for_life"
+    - option: "Fight the tiger."
+      next_id: "fight_tiger"
+
+- id: run_for_life
+  text: "You manage to escape the tiger but get lost again in the jungle. Game Over!"
+  options:
+    - option: "Play again."
+      next_id: "start"
+
+- id: fight_tiger
+  text: "You defeat the tiger and find a map. What do you do?"
+  options:
+    - option: "Continue searching for shelter."
+      next_id: "look_for_shelter"
+    - option: "Search for civilization."
+      next_id: "civilization"
+
+- id: continue_crossing
+  text: "You reach the other side of the river and find a compass. What do you do?"
+  options:
+    - option: "Continue searching for shelter."
+      next_id: "look_for_shelter"
+    - option: "Search for civilization."
+      next_id: "civilization"
+
+- id: civilization
+  text: "You find a village. What do you want to do?"
+  options:
+    - option: "Rest and recover."
+      next_id: "rest"
+    - option: "Ask for directions."
+      next_id: "directions"
+
+- id: rest
+  text: "You rest in the village and regain your strength. What do you want to do next?"
+  options:
+    - option: "Visit the temple."
+      next_id: "visit_temple"
+    - option: "Continue searching for shelter."
+      next_id: "look_for_shelter"
+
+- id: directions
+  text: "The villagers tell you that there is a temple deep in the jungle. Do you want to visit it?"
+  options:
+    - option: "Yes."
+      next_id: "visit_temple"
+    - option: "No, stay in the village."
+      next_id: "stay_in_village"
+
+- id: visit_temple
+  text: "You reach the temple but it's guarded by a group of monkeys. What do you do?"
+  options:
+    - option: "Sneak past them."
+      next_id: "sneak_past_monkeys"
+    - option: "Try to communicate with them."
+      next_id: "communicate_with_monkeys"
+
+- id: sneak_past_monkeys
+  text: "You successfully sneak past the monkeys and discover a hidden treasure! Congratulations, you have won the game!"
+  options:
+    - option: "Play again."
+      next_id: "start"
+
+- id: communicate_with_monkeys
+  text: "The monkeys attack you. Game Over!"
+  options:
+    - option: "Play again."
+      next_id: "start"
+
+- id: stay_in_village
+  text: "You rest in the village but realize you don't have enough supplies to survive. Game Over!"
+  options:
+    - option: "Play again."
+      next_id: "start"

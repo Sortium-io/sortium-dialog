@@ -1,0 +1,12 @@
+# The dialog system is asking the user to make a decision
+decision: {decision_prompt}
+
+# The available options
+options:
+{option_list}
+# The user's response
+user:
+  # User's response
+  response: {user_response}
+  # The closest option to the user's response, picked from options
+  option: [insert]
